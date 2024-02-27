@@ -23,8 +23,7 @@ parser.add_argument('description', type=str, required=True, help='Description is
 parser.add_argument('execution_result', type=str)
 parser.add_argument('test_case_id', type=int)
 
-execution_result_parser = reqparse.RequestParser()
-execution_result_parser.add_argument('execution_result', type=str)
+
 
 # Helper methods
 def test_case_exists(test_case_id):
